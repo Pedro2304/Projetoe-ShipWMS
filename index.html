@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cadastro de Usuário</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="container">
+    <div class="header">
+        <img src="Projetoe-ShipWMS/images.png" alt="Foto do Usuário">
+        <h2>Cadastro de Usuário</h2>
+    </div>
+    <form id="userForm" onsubmit="return validateForm()">
+        <label for="name">Nome:</label>
+        <input type="text" id="name" name="name" placeholder="Seu nome">
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Seu email">
+
+        <label for="password">Senha:</label>
+        <input type="password" id="password" name="password" placeholder="Sua senha">
+
+        <input type="submit" value="Cadastrar">
+    </form>
+    <div id="errorMessage" class="error"></div>
+
+    <div class="social-links">
+        <a href="#"><i class="fab fa-github"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+    </div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
